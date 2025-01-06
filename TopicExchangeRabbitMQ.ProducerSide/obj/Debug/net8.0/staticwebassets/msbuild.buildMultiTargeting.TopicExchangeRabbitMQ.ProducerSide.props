@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TopicExchangeRabbitMQ.ProducerSide.props" />
+</Project>

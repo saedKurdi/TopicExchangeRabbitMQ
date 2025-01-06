@@ -1,0 +1,23 @@
+﻿@model ConsumerViewModel
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js" integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="/js/site.js"></script>
+
+    <div style="display:flex;flex-direction:column;gap:10px;">
+        <!-- Displaying the main groups -->
+        @foreach (var group in Model.GroupNames)
+        {
+            <div id="@group" onclick="loadSubgroupsOfSelectedGroup('@group')" style="display:flex;flex-direction:column;cursor:pointer;">
+                <label><input type="checkbox" />@group</label>
+            </div>
+        }
+    <div>
+        <button onclick="receiveMessagesFromSelectedGroups()">Receive Messages</button>
+        <p style="color:springgreen">@TempData["Message"]</p>
+    </div>
+    <div>
+        <h1>Messages From Groups:</h1>
+        <div id="messagesContainer">
+        </div>
+    </div>
+    </div>

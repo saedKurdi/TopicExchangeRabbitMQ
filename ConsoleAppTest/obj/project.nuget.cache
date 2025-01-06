@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "0uhM/z0Ftt0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\OneDrive\\Рабочий стол\\IT STEP\\My Drive\\DevOps\\Tasks\\TopicExchangeRabbitMQ\\ConsoleAppTest\\ConsoleAppTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\rabbitmq.client\\7.0.0\\rabbitmq.client.7.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\stackexchange.redis\\2.8.24\\stackexchange.redis.2.8.24.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

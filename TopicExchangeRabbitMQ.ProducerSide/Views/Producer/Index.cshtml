@@ -1,0 +1,30 @@
+﻿@model IndexViewModel
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js" integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="/js/site.js"></script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Producer Side</h1>
+    <!-- Adding new group -->
+    <form onsubmit="addGroupToRedisAsync(event);">
+        <input id="groupName" placeholder="Enter group name for adding"/>
+        <button type="submit">Add group</button>
+    </form>
+
+    <!-- Displaying the main groups -->
+    <div style="display:flex;flex-direction:column;gap:10px;">
+        @foreach (var group in Model.GroupNames)
+        {
+            <div id="@group" onclick="loadSubgroupsOfSelectedGroup('@group')" style="display:flex;flex-direction:column;cursor:pointer;">
+                <label><input type="checkbox"/>@group</label>
+            </div>
+        }
+    </div>
+
+    <!-- Sending message to exchange -->
+    <form onsubmit="sendMessageToGroupsAsync(event)">
+        <input id="messageText" placeholder="Message text"/>
+        <button type="submit">Send message</button>
+    </form>
+</div>
